@@ -3,7 +3,8 @@
   <!-- [START head_html] -->
   <head>
         <title>Would You Meechum</title>
-        <link href="styletags.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
   </head>
   <body>
     <script>
@@ -24,14 +25,42 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));        //parameters
     </script>
-    <h3>Would YOU Meechum?</h3>
-    <div id="fb-root"></div>
-      <div
-        class="fb-like"
-        data-send="true"
-        data-width="450"
-        data-show-faces="true">
+      <div>
+        <h1>Would YOU Meechum <small>You know you want to</small></h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-md-4">
+          <img id="meechum" src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <img src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <img src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-md-4">
+          <h1>Person 1</h1>
+        </div>
+        <div class="col-xs-4 col-md-4">
+            <div id="wouldmeechum" class="pad-top col-md-6">
+              <button class="btn btn-default btn-success btn-gigantic center">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+              </button>
+            </div>
+            <div id="hellno" class="pad-top col-md-6">
+              <button class="btn btn-default btn-danger btn-gigantic center">
+                <span class="glyphicon glyphicon-thumbs-down"></span>
+              </button>
+            </div>
+        </div>
+        <div class="col-xs-4 col-md-4">
+          <h1>Person 2</h1>
+        </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>
