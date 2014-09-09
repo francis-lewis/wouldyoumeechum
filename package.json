@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/glewis17/wouldyoumeechum/issues"
   },
-  "homepage": "https://github.com/glewis17/wouldyoumeechum"
+  "homepage": "https://github.com/glewis17/wouldyoumeechum",
+  "dependencies": {
+    "express": "^4.9.0"
+  }
 }
