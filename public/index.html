@@ -8,11 +8,35 @@
   </head>
   <body>
     <script>
+      function statusChangeCallback(response){
+        console.log('statusChangeCallback');
+        console.log(response);
+        if(response.status === 'connected'){
+          testAPI(); // Logged into Meechum and Facebook
+        } else if(response.status === 'not_authorized'){
+          // Logged into FB, but not Meechum
+          document.getElementById('status').innerHTML = 'Please log into this app';
+        } else {
+          // Not logged into FB at all
+          document.getElementById('status').innerHTML = 'Please log into Facebook';
+        }
+      }
+    
+      function checkLoginState(){
+        FB.getLoginStatus(function(response){
+          statusChangeCallback(response);
+        });
+      }
+      
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '908472029182479',
+          appId      : '{{FBAppID}}',
           xfbml      : true,
-          version    : 'v2.0'
+          version    : 'v2.1'
+        });
+        
+        FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
         });
       };
 
@@ -24,18 +48,31 @@
          js.src = "http://connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));        //parameters
+
+       function testAPI(){
+        console.log('Fetching info...');
+        FB.api('/me', function(response){
+          console.log('Successful login for: ' + response.name);
+          document.getElementById('status').innerHTML = 'Thanks ' + response.name;
+        });
+        FB.api('/me/friends', function(response){
+          console.log(response);
+          document.getElementById('status').innerHTML = response;
+        });
+       }
+       
     </script>
       <div>
         <h1>Would YOU Meechum <small>You know you want to</small></h1>
       </div>
       <div class="row">
-        <div class="col-xs-4 col-md-4">
-          <img id="meechum" src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
+        <div id="frank" class="col-xs-4 col-md-4">
+          <img src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
         </div>
-        <div class="col-xs-4 col-md-4">
+        <div id="meechum" class="col-xs-4 col-md-4">
             <img src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
         </div>
-        <div class="col-xs-4 col-md-4">
+        <div id="claire" class="col-xs-4 col-md-4">
             <img src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
         </div>
       </div>
@@ -60,6 +97,8 @@
         </div>
       </div>
     </div>
+    <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();"></fb:login-button>
+    <div id="status"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>

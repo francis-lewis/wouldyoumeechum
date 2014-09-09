@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/glewis17/wouldyoumeechum",
   "dependencies": {
-    "express": "^4.9.0"
+    "express": "^4.9.0",
+    "handlebars": "^2.0.0"
   }
 }
