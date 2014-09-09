@@ -1,0 +1,64 @@
+h1 {
+    border-bottom: 4px solid #57c4d0;
+}
+
+.row{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.center {
+	width: 100%;
+	height: 100%;
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#wouldmeechum{
+	float: left;
+}
+
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+#yesbuttom{
+	width: 500px;
+}
+
+#hellno{
+	float: right;
+}
+
+.btn-gigantic {
+	height:100%;
+    font-size: 40px;
+}
+
+.pad-top{
+	padding-top: 10px;
+}
