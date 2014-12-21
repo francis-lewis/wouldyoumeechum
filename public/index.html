@@ -64,37 +64,51 @@
        
     </script>
       <div>
-        <h1>Would YOU Meechum <small>You know you want to</small></h1>
+          <h1>Would You Meechum</h1>
       </div>
-      <div class="row">
-        <div id="frank" class="col-xs-4 col-md-4">
-          <img src="images/frank.jpg" class="img-rounded center" alt="Rounded Image">
-        </div>
-        <div id="meechum" class="col-xs-4 col-md-4">
-            <img src="images/seductivemeechum.jpg" class="img-rounded center" alt="Rounded Image">
-        </div>
-        <div id="claire" class="col-xs-4 col-md-4">
-            <img src="images/claire.jpg" class="img-rounded center" alt="Rounded Image">
-        </div>
+
+      <div class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Meechum Options<span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><input type="checkbox" class= "checkbox-icon" id="checkbox1" <label class="checkbox-label"> Male Politicans</label></li>
+            <li><input type="checkbox" class= "checkbox-icon" id="checkbox2" <label class="checkbox-label"> Female Politicans</label></li>
+            <li><input type="checkbox" class= "checkbox-icon" id="checkbox3" <label class="checkbox-label"> Actors</label></li>
+            <li><input type="checkbox" class= "checkbox-icon" id="checkbox4" <label class="checkbox-label"> Actresses</label></li>
+            <!-- Other items -->
+          </ul>
       </div>
-      <div class="row">
-        <div class="col-xs-4 col-md-4">
-          <h1>Frank</h1>
+      <div class="jumbotron">
+        <div class="row">
+          <div id="frank" class="col-xs-4 col-md-4">
+            <img src="images/frank.jpg" class="img-rounded center" alt="Rounded Image">
+          </div>
+          <div id="meechum" class="col-xs-4 col-md-4">
+              <img src="images/meechumleft.jpg" class="img-rounded center" alt="Rounded Image">
+          </div>
+          <div id="claire" class="col-xs-4 col-md-4">
+              <img src="images/claire.jpg" class="img-rounded center" alt="Rounded Image">
+          </div>
         </div>
-        <div class="col-xs-4 col-md-4">
-            <div id="wouldmeechum" class="pad-top col-md-6">
-              <button class="btn btn-default btn-success btn-gigantic center">
-                <span class="glyphicon glyphicon-thumbs-up"></span>
-              </button>
-            </div>
-            <div id="hellno" class="pad-top col-md-6">
-              <button class="btn btn-default btn-danger btn-gigantic center">
-                <span class="glyphicon glyphicon-thumbs-down"></span>
-              </button>
-            </div>
-        </div>
-        <div class="col-xs-4 col-md-4">
-          <h1>Claire</h1>
+        <div class="row">
+          <div class="col-xs-4 col-md-4">
+              <h2>Frank</h2>
+          </div>
+          <div class="col-xs-4 col-md-4">
+              <div id="wouldmeechum" class="pad-top col-md-6">
+                <button class="btn btn-default btn-primary btn-gigantic center">
+                  <span class="glyphicon glyphicon-thumbs-up"></span>
+    
+                </button>
+              </div>
+              <div id="hellno" class="pad-top col-md-6">
+                <button class="btn btn-default btn-danger btn-gigantic center">
+                  <span class="glyphicon glyphicon-thumbs-down"></span>
+                </button>
+              </div>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <h2>Claire</h2>
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,56 @@
-h1 {
-    border-bottom: 4px solid #57c4d0;
+body {
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/background.jpg");
 }
 
-.row{
-	padding-left: 20px;
-	padding-right: 20px;
+h1 {
+	font-family: Copperplate, sans-serif;
+	font-weight: bold;
+	font-size: 90px;
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
+
+.btn-group{
+	display: inline;
+	position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h2 {
+	font-family: Copperplate, sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	color: white;
+}
+/*
+.checkbox-icon{
+	display: none;
+}
+
+.checkbox-icon:checked{
+	background-color: #acacaa;
+}
+*/
+.dropdown-menu li{
+	padding-left: 10px;
+}
+
+#title{
+	background-color: blue;
+}
+
+.jumbotron{
+	background: rgba(168, 168, 168, 0.6);
+	padding-left: 40px;
+	padding-right: 40px;
+	position: fixed;
+}
+
+.img-rounded{
+	border: 10px solid #252525;
 }
 
 .center {
@@ -17,37 +63,6 @@ h1 {
 
 #wouldmeechum{
 	float: left;
-}
-
-
-.myButton {
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-}
-.myButton:hover {
-	background-color:#5cbf2a;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-
-
-
-#yesbuttom{
-	width: 500px;
 }
 
 #hellno{
